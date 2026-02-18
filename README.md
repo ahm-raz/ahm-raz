@@ -1,73 +1,188 @@
-# React + TypeScript + Vite
+<h1 align="center">Hi 👋, I'm Ahmad Raza</h1>
+<h3 align="center">Full Stack MERN Developer | Backend Architecture Focused | System Design Enthusiast</h3>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 🧠 About Me
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 💻 Full Stack Developer specialized in **MERN Stack**
+- 🏗️ Strong focus on **Backend Architecture & Scalable Systems**
+- 🔐 Experienced with **JWT Auth, Middleware Chains, Service Layers**
+- 📊 Building SaaS platforms with production-ready structure
+- 🎯 Goal: Build enterprise-grade systems & crack top tech roles
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠 Tech Stack
 
-## Expanding the ESLint configuration
+### 🚀 Backend
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- REST APIs
+- JWT Authentication
+- Role-Based Access Control
+- Transactions
+- Cron Jobs
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 🎨 Frontend
+- React.js
+- React Native
+- Tailwind CSS
+- Modern UI Architecture
+- State Management
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### 🗄️ Database & DevOps
+- MongoDB Atlas
+- Index Optimization
+- Schema Design
+- Git & GitHub
+- Environment Configurations
+- Deployment Workflows
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🏗️ Architecture Mindset
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+✔ Feature-based modular structure  
+✔ Service & Repository Layer separation  
+✔ Middleware-heavy validation  
+✔ Production-ready folder structure  
+✔ Security-first development  
+✔ Clean code & scalability focus  
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 📌 Featured Projects
+
+### 🧾 Gas Cylinder Delivery Management System
+> Inventory tracking, refill cycles, payment management, reporting system  
+- Modular backend architecture  
+- MongoDB transactions  
+- Secure API design  
+
+### 💳 Payback (Failed Payment Recovery SaaS)
+> SaaS platform for recovering failed subscription payments  
+- Event-driven backend logic  
+- Payment retry workflows  
+- Customer lifecycle management  
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=default&hide_border=true" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true" />
+</p>
+
+---
+
+## 📈 Most Used Languages
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true" />
+</p>
+
+---
+
+## 🏆 What I Bring to a Team
+
+- Structured backend thinking
+- Strong database modeling skills
+- Production-grade API design
+- Secure authentication systems
+- Clean & maintainable codebase
+- Long-term scalable architecture
+
+---
+
+## 📬 Connect With Me
+
+- GitHub: https://github.com/YOUR_USERNAME
+- LinkedIn: (Add your link)
+- Portfolio: (Add your link)
+
+---
+
+## ⚡ Current Focus
+
+- Advanced System Design
+- Scalable SaaS architecture
+- Performance optimization
+- Building recruiter-attracting portfolio projects
+
+---
+
+> “Build systems that scale. Write code that lasts.”
+---
+---
+---
+---
+
+
+# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hello, I'm Parth Sharma!
+
+<p align="center">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=35&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&random=false&width=600&height=80&lines=Full-Stack+Developer;Software+Engineer;Problem+Solver;Always+Learning!" alt="Typing SVG" />
+</p>
+
+<div align="center" style="display: flex; align-items: center; justify-content: center; gap: 40px;">
+  <div style="flex: 1;">
+    <img src="https://github.com/ksparth12/ksparth12/blob/main/GithubStreak.png" alt="Parth Sharma" width="1200" style="border-radius: 50%; border: 4px solid #6366F1;">
+  </div>
+  <div style="flex: 2; text-align: left;">
+    <h3>🚀 FROM CONCEPT TO CREATION - LET'S MAKE IT HAPPEN!</h3>
+    <p style="font-family: 'Outfit', sans-serif; font-size: 18px; color: #64748b;">
+      <em>I thrive on crafting dynamic web applications and delivering seamless user experiences.</em>
+    </p>
+  </div>
+</div>
+
+
+## 📊 **GitHub Analytics**
+
+
+<div align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ksparth12&theme=tokyonight&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=FF6B6B&currStreakLabel=E2E8F0&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=E2E8F0&dates=64748B" alt="GitHub Streak" />
+</div>
+
+---
+
+## 📫 **Let's Connect & Collaborate!**
+
+<div align="center">
+  <a href="https://parthsharma-portfolio.vercel.app" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+  </a>
+  <a href="mailto:ksparth12@gmail.com" target="_blank">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
+  </a>
+  <a href="https://linkedin.com/in/ksparth128" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
+  </a>
+  <a href="https://twitter.com/ks_parth" target="_blank">
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  </a>
+  <a href="https://instagram.com/ksparth12" target="_blank">
+    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  </a>
+</div>
+
+---
+
+<div align="center">
+  <img src="https://komarev.com/ghpvc/?username=ParshSharma&style=for-the-badge&color=6366f1&label=Profile+Views" alt="Profile Views" />
+</div>
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
+
+---
+
+<div align="center">
+  <h3>⭐ Don't forget to star my repositories if you find them useful!</h3>
+  <p>Made by Parth Sharma</p>
+</div>
