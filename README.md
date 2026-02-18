@@ -1,188 +1,116 @@
-<h1 align="center">Hi 👋, I'm Ahmad Raza</h1>
-<h3 align="center">Full Stack MERN Developer | Backend Architecture Focused | System Design Enthusiast</h3>
-
----
-
-## 🧠 About Me
-
-- 💻 Full Stack Developer specialized in **MERN Stack**
-- 🏗️ Strong focus on **Backend Architecture & Scalable Systems**
-- 🔐 Experienced with **JWT Auth, Middleware Chains, Service Layers**
-- 📊 Building SaaS platforms with production-ready structure
-- 🎯 Goal: Build enterprise-grade systems & crack top tech roles
-
----
-
-## 🛠 Tech Stack
-
-### 🚀 Backend
-- Node.js
-- Express.js
-- MongoDB
-- Mongoose
-- REST APIs
-- JWT Authentication
-- Role-Based Access Control
-- Transactions
-- Cron Jobs
-
-### 🎨 Frontend
-- React.js
-- React Native
-- Tailwind CSS
-- Modern UI Architecture
-- State Management
-
-### 🗄️ Database & DevOps
-- MongoDB Atlas
-- Index Optimization
-- Schema Design
-- Git & GitHub
-- Environment Configurations
-- Deployment Workflows
-
----
-
-## 🏗️ Architecture Mindset
-
-✔ Feature-based modular structure  
-✔ Service & Repository Layer separation  
-✔ Middleware-heavy validation  
-✔ Production-ready folder structure  
-✔ Security-first development  
-✔ Clean code & scalability focus  
-
----
-
-## 📌 Featured Projects
-
-### 🧾 Gas Cylinder Delivery Management System
-> Inventory tracking, refill cycles, payment management, reporting system  
-- Modular backend architecture  
-- MongoDB transactions  
-- Secure API design  
-
-### 💳 Payback (Failed Payment Recovery SaaS)
-> SaaS platform for recovering failed subscription payments  
-- Event-driven backend logic  
-- Payment retry workflows  
-- Customer lifecycle management  
-
----
-
-## 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=default&hide_border=true" />
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&hide_border=true" />
-</p>
-
----
-
-## 📈 Most Used Languages
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&hide_border=true" />
-</p>
-
----
-
-## 🏆 What I Bring to a Team
-
-- Structured backend thinking
-- Strong database modeling skills
-- Production-grade API design
-- Secure authentication systems
-- Clean & maintainable codebase
-- Long-term scalable architecture
-
----
-
-## 📬 Connect With Me
-
-- GitHub: https://github.com/YOUR_USERNAME
-- LinkedIn: (Add your link)
-- Portfolio: (Add your link)
-
----
-
-## ⚡ Current Focus
-
-- Advanced System Design
-- Scalable SaaS architecture
-- Performance optimization
-- Building recruiter-attracting portfolio projects
-
----
-
-> “Build systems that scale. Write code that lasts.”
----
----
----
----
-
-
-# <img src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" width="30"> Hello, I'm Parth Sharma!
-
-<p align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Outfit&weight=700&size=35&duration=3000&pause=1000&color=6366F1&center=true&vCenter=true&random=false&width=600&height=80&lines=Full-Stack+Developer;Software+Engineer;Problem+Solver;Always+Learning!" alt="Typing SVG" />
-</p>
-
-<div align="center" style="display: flex; align-items: center; justify-content: center; gap: 40px;">
-  <div style="flex: 1;">
-    <img src="https://github.com/ksparth12/ksparth12/blob/main/GithubStreak.png" alt="Parth Sharma" width="1200" style="border-radius: 50%; border: 4px solid #6366F1;">
-  </div>
-  <div style="flex: 2; text-align: left;">
-    <h3>🚀 FROM CONCEPT TO CREATION - LET'S MAKE IT HAPPEN!</h3>
-    <p style="font-family: 'Outfit', sans-serif; font-size: 18px; color: #64748b;">
-      <em>I thrive on crafting dynamic web applications and delivering seamless user experiences.</em>
-    </p>
-  </div>
-</div>
-
-
-## 📊 **GitHub Analytics**
-
-
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ksparth12&theme=tokyonight&hide_border=true&background=0D1117&stroke=6366F1&ring=6366F1&fire=FF6B6B&currStreakLabel=E2E8F0&currStreakNum=E2E8F0&sideNums=E2E8F0&sideLabels=E2E8F0&dates=64748B" alt="GitHub Streak" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&weight=600&size=32&duration=3000&pause=1000&color=00D9FF&center=true&vCenter=true&width=600&height=60&lines=Ahmad+Raza;Full+Stack+MERN+Engineer;Backend+Architecture+%7C+SaaS+Systems" alt="Typing SVG" />
 </div>
 
 ---
 
-## 📫 **Let's Connect & Collaborate!**
+## Engineering Identity
+
+Building scalable backend systems and production-ready SaaS platforms. Focused on architecture that scales, APIs that perform, and code that maintains itself.
+
+**Core Focus:** Backend architecture, service layer design, database optimization, and secure authentication systems.
+
+---
+
+## Tech Stack
 
 <div align="center">
-  <a href="https://parthsharma-portfolio.vercel.app" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-6366F1?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
+
+### Backend
+<img src="https://skillicons.dev/icons?i=nodejs,express,mongodb,mongoose" alt="Backend Stack" />
+
+### Frontend
+<img src="https://skillicons.dev/icons?i=react,reactnative,tailwind" alt="Frontend Stack" />
+
+### Tools & Practices
+<img src="https://skillicons.dev/icons?i=git,github,vscode" alt="Tools" />
+
+</div>
+
+**Technologies:** Node.js • Express • MongoDB • Mongoose • React • React Native • JWT Authentication • RBAC • Service/Repository Pattern • MongoDB Transactions • Cron Jobs • REST APIs • Tailwind CSS
+
+---
+
+## GitHub Analytics
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=dark&bg_color=000000&hide_border=true&title_color=00D9FF&icon_color=00D9FF&text_color=ffffff" alt="GitHub Stats" />
+  <img height="180em" src="https://github-readme-streak-stats.herokuapp.com/?user=YOUR_USERNAME&theme=dark&background=000000&hide_border=true&ring=00D9FF&fire=00D9FF&currStreakLabel=00D9FF&sideNums=ffffff&sideLabels=ffffff&dates=888888" alt="GitHub Streak" />
+</div>
+
+---
+
+## Top Languages
+
+<div align="center">
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=dark&bg_color=000000&hide_border=true&title_color=00D9FF&text_color=ffffff" alt="Top Languages" />
+</div>
+
+---
+
+## Contribution Graph
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/YOUR_USERNAME/YOUR_USERNAME/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+</div>
+
+---
+
+## Featured Projects
+
+### Payback
+**SaaS Failed Payment Recovery System**
+
+Production-grade SaaS platform for automated recovery of failed subscription payments. Built with event-driven architecture, payment retry workflows, and comprehensive customer lifecycle management.
+
+**Stack:** Node.js • Express • MongoDB • JWT • Service Layer Architecture
+
+---
+
+### Gas Cylinder Delivery Management System
+**Inventory + Payments + Reporting**
+
+Enterprise-level delivery management system with inventory tracking, refill cycle automation, payment processing, and comprehensive reporting. Features MongoDB transactions for data integrity and cron-based automation.
+
+**Stack:** Node.js • Express • MongoDB • Mongoose • Transactions • Cron Jobs
+
+---
+
+## What I Bring
+
+- **Backend Architecture:** Service/repository pattern implementation, middleware chains, modular structure
+- **Database Design:** MongoDB schema optimization, transaction management, indexing strategies
+- **API Development:** RESTful design, authentication systems, role-based access control
+- **Production Readiness:** Error handling, logging, security best practices, scalable architecture
+- **Code Quality:** Clean code principles, maintainable structure, documentation
+
+---
+
+## Connect With Me
+
+<div align="center">
+  <a href="https://github.com/YOUR_USERNAME" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-000000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
-  <a href="mailto:ksparth12@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="https://linkedin.com/in/ksparth128" target="_blank">
+  <a href="https://linkedin.com/in/YOUR_LINKEDIN" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
-  <a href="https://twitter.com/ks_parth" target="_blank">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
+  <a href="mailto:YOUR_EMAIL" target="_blank">
+    <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
   </a>
-  <a href="https://instagram.com/ksparth12" target="_blank">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram" />
+  <a href="https://YOUR_PORTFOLIO" target="_blank">
+    <img src="https://img.shields.io/badge/Portfolio-00D9FF?style=for-the-badge&logo=googlechrome&logoColor=000000" alt="Portfolio" />
   </a>
 </div>
 
 ---
 
 <div align="center">
-  <img src="https://komarev.com/ghpvc/?username=ParshSharma&style=for-the-badge&color=6366f1&label=Profile+Views" alt="Profile Views" />
-</div>
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" alt="Snake animation" />
+  <img src="https://komarev.com/ghpvc/?username=YOUR_USERNAME&style=flat-square&color=00D9FF&label=Profile+Views" alt="Profile Views" />
 </div>
 
 ---
 
 <div align="center">
-  <h3>⭐ Don't forget to star my repositories if you find them useful!</h3>
-  <p>Made by Parth Sharma</p>
+  <sub>Building systems that scale. Writing code that lasts.</sub>
 </div>
