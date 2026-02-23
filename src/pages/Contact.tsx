@@ -1,9 +1,17 @@
+import ContactHero from "../components/sections/ContactHero";
+import ContactForm from "../components/sections/ContactForm";
+import SocialGrid from "../components/sections/SocialGrid";
+import ContactInfo from "../components/sections/ContactInfo";
+
 const Contact = () => {
   return (
-    <section className="max-w-2xl mx-auto">
-      <h1 className="text-3xl font-bold mb-4">Contact</h1>
-    </section>
-  )
-}
+    <>
+      <ContactHero />
+      <ContactForm />
+      <SocialGrid />
+      <ContactInfo />
+    </>
+  );
+};
 
-export default Contact
+export default Contact;
