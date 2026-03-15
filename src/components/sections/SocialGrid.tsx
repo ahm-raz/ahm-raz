@@ -61,13 +61,13 @@ const socialLinks = [
 
 const SocialGrid = () => {
   return (
-    <section className="py-16 md:py-24 bg-black/40">
-      <div className="container mx-auto px-4">
+    <section className="py-10 sm:py-14 md:py-20 lg:py-24">
+      <div className="w-full max-w-full container mx-auto px-4 sm:px-6 min-w-0">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-2xl md:text-3xl font-bold text-white mb-12 text-center">
+          <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 md:mb-12 text-center">
             Find Me Online
           </h2>
-          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-7 gap-6 justify-items-center">
+          <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 xl:grid-cols-7 gap-3 sm:gap-4 md:gap-5 lg:gap-6 justify-items-center">
             {socialLinks.map(({ icon: Icon, href, label }, index) => (
               <SocialIcon
                 key={index}

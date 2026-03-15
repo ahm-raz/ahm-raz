@@ -1,16 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700&display=swap");
 @import "tailwindcss";
 
+/* Class-based dark mode: add .dark to html for night mode */
+@variant dark (&:where(.dark, .dark *));
+
 /* Suissnord: Add font files to /fonts/ and uncomment @font-face to use. Sora is fallback. */
 :root {
   --font-suissnord: "Sora", sans-serif;
+  /* Responsive container padding - use in components if needed */
+  --container-px: 1rem;
+  --section-py: 2.5rem;
+}
+
+@media (min-width: 640px) {
+  :root {
+    --container-px: 1.5rem;
+    --section-py: 3rem;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-px: 2rem;
+    --section-py: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-px: 2rem;
+    --section-py: 5rem;
+  }
+}
+
+/* Strict responsive: no horizontal overflow, safe tap targets */
+html {
+  overflow-x: hidden;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* Day mode (light) */
+html.light body {
+  background-color: #ffffff;
+  color: #111827;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23000000'/%3E%3C/svg%3E") 10 10, auto;
+}
+
+/* Night mode (dark) */
+html.dark body {
+  background-color: #000000;
+  color: #ffffff;
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4' fill='%23ffffff'/%3E%3C/svg%3E") 10 10, auto;
 }
 
 body {
-  background-color: #000000;
-  color: #ffffff;
-  /* cursor: crosshair; */
-  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20 20'%3E%3Ccircle cx='10' cy='10' r='4' fill='%2300ff00'/%3E%3C/svg%3E") 10 10, auto;
+  overflow-x: hidden;
+  min-width: 0;
+}
+
+/* Smooth 1s transition when switching day/night mode */
+html.theme-transitioning,
+html.theme-transitioning body,
+html.theme-transitioning *,
+html.theme-transitioning *::before,
+html.theme-transitioning *::after {
+  transition-duration: 1s !important;
+  transition-timing-function: ease !important;
+  transition-property: background-color, color, border-color, box-shadow, fill, stroke, opacity !important;
 }
 
 /* Cursor Recommendations - Choose one style: */
@@ -28,16 +84,16 @@ body {
 /* body { cursor: pointer; } */
 
 /* Option 5: Custom SVG cursor (inline) */
-/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%2300ff00' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E") 12 12, auto; } */
+/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath fill='%23ffffff' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E") 12 12, auto; } */
 
 /* Option 6: Hacker Green Dot Cursor */
-/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='4' fill='%2300ff00'/%3E%3C/svg%3E") 8 8, auto; } */
+/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='4' fill='%23ffffff'/%3E%3C/svg%3E") 8 8, auto; } */
 
 /* Option 7: Terminal Block Cursor */
-/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='20' viewBox='0 0 12 20'%3E%3Crect width='12' height='20' fill='%2300ff00'/%3E%3C/svg%3E") 6 10, auto; } */
+/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='20' viewBox='0 0 12 20'%3E%3Crect width='12' height='20' fill='%23ffffff'/%3E%3C/svg%3E") 6 10, auto; } */
 
 /* Option 8: Minimalist Dot */
-/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='4' cy='4' r='3' fill='%2300ff00' stroke='%2300ff00' stroke-width='1'/%3E%3C/svg%3E") 4 4, auto; } */
+/* body { cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8' viewBox='0 0 8 8'%3E%3Ccircle cx='4' cy='4' r='3' fill='%23ffffff' stroke='%23ffffff' stroke-width='1'/%3E%3C/svg%3E") 4 4, auto; } */
 
 /* Interactive elements */
 a, button, [role="button"] {
@@ -51,6 +107,14 @@ textarea {
   cursor: text;
 }
 
+/* Hero "Hi I'm" stroke - day vs night */
+.hero-title-stroke {
+  -webkit-text-stroke: 0.5px #111827;
+}
+.dark .hero-title-stroke {
+  -webkit-text-stroke: 0.5px #ffffff;
+}
+
 /* Navbar active link indicator */
 nav a.active::after {
   content: '';
@@ -59,8 +123,11 @@ nav a.active::after {
   left: 0;
   right: 0;
   height: 1px;
-  background-color: #00ff00;
+  background-color: #111827;
   opacity: 0.5;
+}
+.dark nav a.active::after {
+  background-color: #ffffff;
 }
 
 /* Animations */
@@ -158,4 +225,18 @@ nav a.active::after {
 
 .animate-carousel-card-in {
   animation: carousel-card-in 0.3s ease-out;
+}
+
+/* Loader progress bar */
+@keyframes progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+.animate-progress {
+  animation: progress 4s ease-in-out forwards;
 }

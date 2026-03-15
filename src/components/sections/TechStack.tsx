@@ -37,28 +37,28 @@ const TechStack = () => {
   const duplicateItems = (items: typeof frontendTech) => [...items, ...items];
 
   return (
-    <section className="py-16 md:py-24 bg-black/40 overflow-hidden">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12 text-center">
+    <section className="py-10 sm:py-14 md:py-20 lg:py-24 overflow-hidden">
+      <div className="w-full max-w-full container mx-auto px-4 sm:px-6 min-w-0">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 md:mb-12 text-center">
           Tech Stack & Tools
         </h2>
 
         {/* Frontend Row */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold text-white mb-4 text-center md:text-left">
+        <div className="mb-6 sm:mb-8">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4 text-center md:text-left">
             Frontend
           </h3>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden -mx-4 sm:mx-0">
             <div className="flex animate-scroll-slow">
               {duplicateItems(frontendTech).map((tech, index) => {
                 const Icon = tech.icon;
                 return (
                   <div
                     key={index}
-                    className="flex-shrink-0 flex items-center gap-3 px-6 py-4 mx-4 bg-black/30 border border-[#00ff00]/20 rounded-lg hover:border-[#00ff00]/50 hover:bg-black/50 transition-all duration-300 group"
+                    className="flex-shrink-0 flex items-center gap-2 sm:gap-3 px-3 py-3 sm:px-5 sm:py-4 mx-2 sm:mx-4 bg-gray-100 dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg hover:border-gray-900 dark:hover:border-white/50 hover:bg-gray-200 dark:hover:bg-black transition-all duration-300 group"
                   >
-                    <Icon className="text-2xl text-[#00ff00] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white text-sm font-medium whitespace-nowrap">
+                    <Icon className="text-lg sm:text-xl md:text-2xl text-white shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-gray-900 dark:text-white text-xs sm:text-sm font-medium whitespace-nowrap">
                       {tech.name}
                     </span>
                   </div>
@@ -69,21 +69,21 @@ const TechStack = () => {
         </div>
 
         {/* Backend Row */}
-        <div className="mb-8">
-          <h3 className="text-xl font-semibold text-white mb-4 text-center md:text-left">
+        <div className="mb-6 sm:mb-8">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4 text-center md:text-left">
             Backend
           </h3>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden -mx-4 sm:mx-0">
             <div className="flex animate-scroll-slow-reverse">
               {duplicateItems(backendTech).map((tech, index) => {
                 const Icon = tech.icon;
                 return (
                   <div
                     key={index}
-                    className="flex-shrink-0 flex items-center gap-3 px-6 py-4 mx-4 bg-black/30 border border-[#00ff00]/20 rounded-lg hover:border-[#00ff00]/50 hover:bg-black/50 transition-all duration-300 group"
+                    className="flex-shrink-0 flex items-center gap-2 sm:gap-3 px-3 py-3 sm:px-5 sm:py-4 mx-2 sm:mx-4 bg-gray-100 dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg hover:border-gray-900 dark:hover:border-white/50 hover:bg-gray-200 dark:hover:bg-black transition-all duration-300 group"
                   >
-                    <Icon className="text-2xl text-[#00ff00] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white text-sm font-medium whitespace-nowrap">
+                    <Icon className="text-lg sm:text-xl md:text-2xl text-white shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-gray-900 dark:text-white text-xs sm:text-sm font-medium whitespace-nowrap">
                       {tech.name}
                     </span>
                   </div>
@@ -95,20 +95,20 @@ const TechStack = () => {
 
         {/* Engineering Row */}
         <div>
-          <h3 className="text-xl font-semibold text-white mb-4 text-center md:text-left">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-3 sm:mb-4 text-center md:text-left">
             Engineering
           </h3>
-          <div className="relative overflow-hidden">
+          <div className="relative overflow-hidden -mx-4 sm:mx-0">
             <div className="flex animate-scroll-slow">
               {duplicateItems(engineeringTech).map((tech, index) => {
                 const Icon = tech.icon;
                 return (
                   <div
                     key={index}
-                    className="flex-shrink-0 flex items-center gap-3 px-6 py-4 mx-4 bg-black/30 border border-[#00ff00]/20 rounded-lg hover:border-[#00ff00]/50 hover:bg-black/50 transition-all duration-300 group"
+                    className="flex-shrink-0 flex items-center gap-2 sm:gap-3 px-3 py-3 sm:px-5 sm:py-4 mx-2 sm:mx-4 bg-gray-100 dark:bg-black border border-gray-300 dark:border-white/20 rounded-lg hover:border-gray-900 dark:hover:border-white/50 hover:bg-gray-200 dark:hover:bg-black transition-all duration-300 group"
                   >
-                    <Icon className="text-2xl text-[#00ff00] group-hover:scale-110 transition-transform duration-300" />
-                    <span className="text-white text-sm font-medium whitespace-nowrap">
+                    <Icon className="text-lg sm:text-xl md:text-2xl text-white shrink-0 group-hover:scale-110 transition-transform duration-300" />
+                    <span className="text-gray-900 dark:text-white text-xs sm:text-sm font-medium whitespace-nowrap">
                       {tech.name}
                     </span>
                   </div>

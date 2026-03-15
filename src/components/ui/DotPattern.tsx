@@ -237,7 +237,7 @@ export function DotPattern({
         className="pointer-events-none fixed inset-0"
         style={{
           background:
-            "radial-gradient(ellipse at center, transparent 0%, transparent 40%, rgba(0,0,0,0.6) 100%)",
+            "radial-gradient(ellipse at center, transparent 0%, transparent 40%, #000000 100%)",
         }}
       />
 

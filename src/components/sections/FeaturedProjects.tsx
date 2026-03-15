@@ -61,24 +61,24 @@ const ProjectCard = ({
 }) => (
   <div className={className} style={style}>
     <div
-      className="h-full bg-black/40 border border-white/10 rounded-lg p-6 hover:border-[#00ff00]/30 transition-all duration-300 hover:bg-black/60 group"
+      className="h-full bg-gray-100 dark:bg-black border border-gray-200 dark:border-white/10 rounded-lg p-3 sm:p-4 md:p-6 hover:border-gray-400 dark:hover:border-white/30 transition-all duration-300 hover:bg-gray-200 dark:hover:bg-black group min-h-0"
       style={{ transformStyle: "preserve-3d", backfaceVisibility: "hidden" }}
     >
-      <div className="mb-2">
-        <span className="text-xs text-[#00ff00] font-medium uppercase tracking-wide">
+      <div className="mb-1.5 sm:mb-2">
+        <span className="text-[10px] sm:text-xs text-gray-700 dark:text-white font-medium uppercase tracking-wide">
           {project.type}
         </span>
       </div>
-      <h3 className="text-xl font-semibold text-white mb-3 group-hover:text-[#00ff00] transition-colors">
+      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 dark:text-white mb-2 sm:mb-3 group-hover:text-gray-700 dark:group-hover:text-white transition-colors break-words">
         {project.title}
       </h3>
-      <p className="text-gray-400 text-sm mb-4 leading-relaxed">
+      <p className="text-gray-500 dark:text-gray-400 text-xs sm:text-sm mb-2 sm:mb-4 leading-relaxed line-clamp-3 sm:line-clamp-none">
         {project.description}
       </p>
-      <p className="text-gray-500 text-xs mb-4 font-mono">{project.tech}</p>
+      <p className="text-gray-500 text-[10px] sm:text-xs mb-2 sm:mb-4 font-mono line-clamp-2 sm:line-clamp-none">{project.tech}</p>
       <Link
         to="/projects"
-        className="inline-block text-sm text-white hover:text-[#00ff00] transition-colors font-medium"
+        className="inline-block text-xs sm:text-sm text-gray-900 dark:text-white hover:text-gray-700 dark:hover:text-white transition-colors font-medium py-1"
       >
         View Details →
       </Link>
@@ -181,15 +181,15 @@ const FeaturedProjects = () => {
   ];
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-white mb-12">
+    <section className="py-10 sm:py-14 md:py-20 lg:py-24">
+      <div className="w-full max-w-full container mx-auto px-4 sm:px-6 min-w-0">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-8 sm:mb-10 md:mb-12">
           Featured Projects
         </h2>
 
         <div
           ref={scrollRef}
-          className="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth min-h-[340px] [&::-webkit-scrollbar]:hidden"
+          className="flex overflow-x-auto overflow-y-hidden snap-x snap-mandatory scroll-smooth min-h-[300px] sm:min-h-[320px] md:min-h-[340px] [&::-webkit-scrollbar]:hidden -mx-4 sm:mx-0 px-2 sm:px-0"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
           {Array.from({ length: totalSlides }).map((_, slideIndex) => {
@@ -207,14 +207,14 @@ const FeaturedProjects = () => {
                 }}
               >
                 <div
-                  className="flex justify-center items-center w-full"
+                  className="flex justify-center items-center w-full min-w-0"
                   style={{ transformStyle: "preserve-3d" }}
                 >
                   {projects.map((project, cardIndex) => (
                     <ProjectCard
                       key={`${slideIndex}-${cardIndex}`}
                       project={project}
-                      className="flex-shrink-0 w-[260px] max-w-[260px] transition-transform duration-300 ease-out origin-center"
+                      className="flex-shrink-0 w-[220px] min-[480px]:w-[240px] sm:w-[260px] max-w-[95vw] transition-transform duration-300 ease-out origin-center"
                       style={{
                         ...cardTransforms[cardIndex],
                       }}
@@ -226,16 +226,16 @@ const FeaturedProjects = () => {
           })}
         </div>
 
-        <div className="flex items-center justify-center gap-2 mt-8">
+        <div className="flex items-center justify-center gap-2 sm:gap-2.5 mt-6 sm:mt-8">
           {Array.from({ length: totalPages }).map((_, i) => (
             <button
               key={i}
               type="button"
               onClick={() => goToPage(i)}
-              className={`w-2.5 h-2.5 rounded-full transition-all ${
+              className={`w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full transition-all min-h-[2rem] min-w-[2rem] sm:min-h-0 sm:min-w-0 flex items-center justify-center ${
                 i === currentPage
-                  ? "bg-[#00ff00] scale-125"
-                  : "bg-white/30 hover:bg-white/50"
+                  ? "bg-gray-900 dark:bg-white scale-125"
+                  : "bg-gray-400 dark:bg-white/30 hover:bg-gray-500 dark:hover:bg-white/50"
               }`}
               aria-label={`Go to page ${i + 1}`}
               aria-current={i === currentPage ? "true" : undefined}

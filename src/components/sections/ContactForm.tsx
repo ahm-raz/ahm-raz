@@ -24,24 +24,24 @@ const ContactForm = () => {
   };
 
   return (
-    <section className="py-16 md:py-24">
-      <div className="container mx-auto px-4">
-        <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <div className="space-y-4">
-            <h2 className="text-2xl md:text-3xl font-bold text-white mb-4">
+    <section className="py-10 sm:py-14 md:py-20 lg:py-24">
+      <div className="w-full max-w-full container mx-auto px-4 sm:px-6 min-w-0">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12 max-w-6xl mx-auto">
+          <div className="space-y-3 sm:space-y-4 min-w-0">
+            <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-2 sm:mb-4">
               Get in Touch
             </h2>
-            <p className="text-gray-400 leading-relaxed">
+            <p className="text-gray-600 dark:text-gray-400 text-sm sm:text-base leading-relaxed">
               Have a project in mind or want to discuss opportunities? 
               Send me a message and I'll get back to you as soon as possible.
             </p>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 md:space-y-6 min-w-0">
             <div>
               <label
                 htmlFor="name"
-                className="block text-sm font-medium text-gray-300 mb-2"
+                className="block text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 mb-1.5 sm:mb-2"
               >
                 Name
               </label>
@@ -52,7 +52,7 @@ const ContactForm = () => {
                 required
                 value={formData.name}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-black border border-[#00ff00]/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00ff00] transition-colors duration-200"
+                className="w-full min-w-0 px-3 py-2.5 sm:px-4 sm:py-3 bg-white dark:bg-black border border-gray-300 dark:border-white/30 rounded-lg text-gray-900 dark:text-white text-base placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gray-900 dark:focus:border-white transition-colors duration-200"
                 placeholder="Your name"
               />
             </div>
@@ -60,7 +60,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="email"
-                className="block text-sm font-medium text-gray-300 mb-2"
+                className="block text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 mb-1.5 sm:mb-2"
               >
                 Email
               </label>
@@ -71,7 +71,7 @@ const ContactForm = () => {
                 required
                 value={formData.email}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-black border border-[#00ff00]/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00ff00] transition-colors duration-200"
+                className="w-full min-w-0 px-3 py-2.5 sm:px-4 sm:py-3 bg-white dark:bg-black border border-gray-300 dark:border-white/30 rounded-lg text-gray-900 dark:text-white text-base placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gray-900 dark:focus:border-white transition-colors duration-200"
                 placeholder="your.email@example.com"
               />
             </div>
@@ -79,7 +79,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="subject"
-                className="block text-sm font-medium text-gray-300 mb-2"
+                className="block text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 mb-1.5 sm:mb-2"
               >
                 Subject
               </label>
@@ -90,7 +90,7 @@ const ContactForm = () => {
                 required
                 value={formData.subject}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-black border border-[#00ff00]/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00ff00] transition-colors duration-200"
+                className="w-full min-w-0 px-3 py-2.5 sm:px-4 sm:py-3 bg-white dark:bg-black border border-gray-300 dark:border-white/30 rounded-lg text-gray-900 dark:text-white text-base placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gray-900 dark:focus:border-white transition-colors duration-200"
                 placeholder="What's this about?"
               />
             </div>
@@ -98,7 +98,7 @@ const ContactForm = () => {
             <div>
               <label
                 htmlFor="message"
-                className="block text-sm font-medium text-gray-300 mb-2"
+                className="block text-xs sm:text-sm font-medium text-gray-600 dark:text-gray-300 mb-1.5 sm:mb-2"
               >
                 Message
               </label>
@@ -106,17 +106,17 @@ const ContactForm = () => {
                 id="message"
                 name="message"
                 required
-                rows={6}
+                rows={5}
                 value={formData.message}
                 onChange={handleChange}
-                className="w-full px-4 py-3 bg-black border border-[#00ff00]/30 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-[#00ff00] transition-colors duration-200 resize-none"
+                className="w-full min-w-0 px-3 py-2.5 sm:px-4 sm:py-3 bg-white dark:bg-black border border-gray-300 dark:border-white/30 rounded-lg text-gray-900 dark:text-white text-base placeholder-gray-400 dark:placeholder-gray-500 focus:outline-none focus:border-gray-900 dark:focus:border-white transition-colors duration-200 resize-none min-h-[7rem] sm:min-h-[8rem]"
                 placeholder="Tell me about your project or opportunity..."
               />
             </div>
 
             <button
               type="submit"
-              className="w-full px-6 py-3 border-2 border-[#00ff00] text-[#00ff00] font-medium rounded-lg hover:bg-[#00ff00] hover:text-black transition-all duration-200"
+              className="w-full px-4 py-2.5 sm:px-6 sm:py-3 border-2 border-gray-900 dark:border-white text-gray-900 dark:text-white text-sm sm:text-base font-medium rounded-lg hover:bg-gray-900 dark:hover:bg-white hover:text-white dark:hover:text-black transition-all duration-200 min-h-[2.75rem]"
             >
               Send Message
             </button>
