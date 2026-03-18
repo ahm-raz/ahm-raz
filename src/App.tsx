@@ -7,7 +7,16 @@ import { useTheme } from "./contexts/ThemeContext"
 import Loader from "./components/ui/Loader"
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const LOADER_DONE_KEY = "ahm-raz-loader-done"
+  const [isLoading, setIsLoading] = useState(() => {
+    if (typeof window === "undefined") return true
+    try {
+      return sessionStorage.getItem(LOADER_DONE_KEY) !== "1"
+    } catch {
+      // If storage is blocked, fall back to showing once per refresh.
+      return true
+    }
+  })
   const { theme } = useTheme()
   const muiTheme = useMemo(
     () =>
@@ -26,7 +35,18 @@ function App() {
   return (
     <MuiThemeProvider theme={muiTheme}>
       <CssBaseline />
-      {isLoading && <Loader onComplete={() => setIsLoading(false)} />}
+      {isLoading && (
+        <Loader
+          onComplete={() => {
+            setIsLoading(false)
+            try {
+              sessionStorage.setItem(LOADER_DONE_KEY, "1")
+            } catch {
+              // ignore
+            }
+          }}
+        />
+      )}
       <div
         className={`min-w-0 overflow-x-hidden transition-all duration-700 ease-out ${
           isLoading

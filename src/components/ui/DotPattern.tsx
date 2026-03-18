@@ -3,6 +3,12 @@ import { useCallback, useEffect, useMemo, useRef } from "react";
 export interface DotPatternProps {
   className?: string;
   children?: React.ReactNode;
+  /**
+   * Positioning mode.
+   * - `fixed`: covers the whole viewport (original behavior)
+   * - `absolute`: stays within the nearest positioned parent
+   */
+  position?: "fixed" | "absolute";
   /** Dot diameter in pixels */
   dotSize?: number;
   /** Gap between dots in pixels */
@@ -17,6 +23,8 @@ export interface DotPatternProps {
   glowIntensity?: number;
   /** Wave animation speed (0 to disable) */
   waveSpeed?: number;
+  /** Background class for the container (use `bg-transparent` for section backgrounds) */
+  backgroundClassName?: string;
 }
 
 function hexToRgb(hex: string): { r: number; g: number; b: number } {
@@ -39,6 +47,7 @@ interface Dot {
 export function DotPattern({
   className = "",
   children,
+  position = "fixed",
   dotSize = 2,
   gap = 24,
   baseColor = "#404040",
@@ -46,6 +55,7 @@ export function DotPattern({
   proximity = 120,
   glowIntensity = 1,
   waveSpeed = 0.5,
+  backgroundClassName = "bg-black",
 }: DotPatternProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -225,16 +235,21 @@ export function DotPattern({
     };
   }, []);
 
+  const positionClass = position === "absolute" ? "absolute inset-0" : "fixed inset-0";
+
   return (
     <div
       ref={containerRef}
-      className={`fixed inset-0 overflow-y-auto bg-black ${className}`}
+      className={`${positionClass} overflow-y-auto ${backgroundClassName} ${className}`}
     >
-      <canvas ref={canvasRef} className="fixed inset-0 h-full w-full pointer-events-none" />
+      <canvas
+        ref={canvasRef}
+        className={`${positionClass} h-full w-full pointer-events-none`}
+      />
 
       {/* Vignette overlay */}
       <div
-        className="pointer-events-none fixed inset-0"
+        className={`pointer-events-none ${positionClass}`}
         style={{
           background:
             "radial-gradient(ellipse at center, transparent 0%, transparent 40%, #000000 100%)",

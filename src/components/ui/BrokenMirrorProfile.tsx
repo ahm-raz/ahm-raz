@@ -1,5 +1,5 @@
 const BrokenMirrorProfile = () => {
-  const imageSrc = "/profile.png";
+  const imageSrc = "/profile.jpeg";
 
   return (
     <div className="relative w-full max-w-[min(100%,18rem)] sm:max-w-[20rem] md:max-w-[22rem] lg:max-w-[360px] xl:max-w-[420px] min-h-[280px] sm:min-h-[320px] md:min-h-[380px] lg:min-h-[420px] xl:min-h-[480px] mx-auto flex items-center justify-center group">
