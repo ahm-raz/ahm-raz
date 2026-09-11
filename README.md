@@ -44,14 +44,13 @@ Founding or lead engineer on multiple funded startups — SaaS platforms with re
 
 | | System | What moved | Stack |
 |---|---|---|---|
-| 01 | **[EB3](https://ahm-raz.vercel.app/work/eb3)** — SaaS migration | Laravel Blade monolith → React SPA + REST, zero downtime for 500+ agencies. **$100K → $600K MRR**, **77%** faster loads, **+38%** signups, doc engine **4 h → 30 s** | React · Laravel · TanStack Query · CDN |
-| 02 | **[PointrSolutions](https://ahm-raz.vercel.app/work/pointr)** — data pipeline | Multi-tenant livestock analytics: **100K+ records/day**, **sub-2s** dashboards, forecasting lifted batch profitability **18–22%** | Django · Next.js · PostgreSQL · RMIS |
-| 03 | **[ShopSmart](https://ahm-raz.vercel.app/work/shopsmart)** — production RAG | Nationwide parts marketplace: **25+ tables under RLS**, escrow + disputes, RAG assistant on **live inventory** | Next.js · Supabase · pgvector · Anthropic SDK |
-| 04 | **[Fabrik](https://ahm-raz.vercel.app/work/fabrik)** — portfolio SaaS | Themes engine, custom-domain routing and **8+ vertical integrations** for creatives featured in BBC and Nat Geo | Next.js · GraphQL · Sanity |
-| 05 | **[Smuves](https://ahm-raz.vercel.app/work/smuves)** — CMS tooling | Bulk editor + ETL migrating **50K+ HubSpot records, zero data loss**; update cycles **days → 30 min** | Node.js · HubSpot API · ETL |
-| 06 | **[Mental-health SaaS](https://ahm-raz.vercel.app/work/mentalhealth)** · NDA | Multi-tenant AI group chat with a Python **RAG triage agent** for severity detection and counsellor routing | React · Node.js · Python · WebSockets |
-| 07 | **[AI Education SaaS](https://ahm-raz.vercel.app/work/aiedu)** · NDA | **6-stage** AI question-extraction pipeline, curriculum-aligned assignment agent, psychometric analytics | Next.js · Supabase · pgvector · multi-agent |
-| 08 | **[Qubitars](https://ahm-raz.vercel.app/work/qubitars)** — engineering leadership | CI/CD + Docker across 3+ products, **−40%** release cycle; mentored 3 juniors, **2 promoted** in 6 months | CI/CD · Docker · architecture |
+| 01 | **[PointrSolutions](https://ahm-raz.vercel.app/work/pointr)** — data pipeline | Multi-tenant livestock analytics: **100K+ records/day**, **sub-2s** dashboards, forecasting lifted batch profitability **18–22%** | Django · Next.js · PostgreSQL · RMIS |
+| 02 | **[ShopSmart](https://ahm-raz.vercel.app/work/shopsmart)** — production RAG | Nationwide parts marketplace: **25+ tables under RLS**, escrow + disputes, RAG assistant on **live inventory** | Next.js · Supabase · pgvector · Anthropic SDK |
+| 03 | **[Fabrik](https://ahm-raz.vercel.app/work/fabrik)** — portfolio SaaS | Themes engine, custom-domain routing and **8+ vertical integrations** for creatives featured in BBC and Nat Geo | Next.js · GraphQL · Sanity |
+| 04 | **[Smuves](https://ahm-raz.vercel.app/work/smuves)** — CMS tooling | Bulk editor + ETL migrating **50K+ HubSpot records, zero data loss**; update cycles **days → 30 min** | Node.js · HubSpot API · ETL |
+| 05 | **[Mental-health SaaS](https://ahm-raz.vercel.app/work/mentalhealth)** · NDA | Multi-tenant AI group chat with a Python **RAG triage agent** for severity detection and counsellor routing | React · Node.js · Python · WebSockets |
+| 06 | **[AI Education SaaS](https://ahm-raz.vercel.app/work/aiedu)** · NDA | **6-stage** AI question-extraction pipeline, curriculum-aligned assignment agent, psychometric analytics | Next.js · Supabase · pgvector · multi-agent |
+| 07 | **[Qubitars](https://ahm-raz.vercel.app/work/qubitars)** — engineering leadership | CI/CD + Docker across 3+ products, **−40%** release cycle; mentored 3 juniors, **2 promoted** in 6 months | CI/CD · Docker · architecture |
 
 <p align="center"><a href="https://ahm-raz.vercel.app/work">All eight case studies →</a></p>
 
@@ -108,16 +107,6 @@ Remote, async-first, overlapping UK / EU / US-East / AU mornings. Three ways to 
 <p align="center">
   <a href="https://ahm-raz.vercel.app/contact"><img src="https://img.shields.io/badge/Start%20a%20conversation-%E2%86%92-22c55e?style=for-the-badge" alt="Contact" /></a>
 </p>
-
-## About this repo
-
-This is also the source of the portfolio — a Next.js 16 App Router site: a starfield with an agent companion that follows you section by section, scroll-scrubbed case-study visualisations, a rotating night-side Earth built from Lahore, a draggable skills constellation, and a contact form that delivers to WhatsApp / Telegram through a Server Action. Lighthouse 96 · 100 · 100 · 100.
-
-```
-npm install
-npm run dev      # http://localhost:3000
-npm test         # notification pipeline
-```
 
 ## GitHub
 
